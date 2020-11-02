@@ -24,10 +24,7 @@ int main()
 		k = (k1+2*k2+2*k3+k4)/6;
 		y0 = y0+k;
 		x0 = x0+h;
-		printf("Step = %d\nk1 = %f\nk2 = %f\nk3 = %f\nk4 = %f\n",i,k1,k2,k3,k4);0
-		1
-		0.2
-		1
-		printf("At x = %f \t\t y = %f\n",x0,y0);
+		printf("\n\nStep = %d\nk1 = %f\nk2 = %f\nk3 = %f\nk4 = %f\n",i,k1,k2,k3,k4);
+		printf("\nAt x = %f \t\t y = %f\n",x0,y0);
 	}
 }
