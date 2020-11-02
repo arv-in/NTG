@@ -3,7 +3,7 @@
 
 float f(float x,float y)
 {
-	float a = -2*x*y*y;
+	float a = -2*x*y*y;            // Enter y' here
 	return a;
 }
 
@@ -21,7 +21,7 @@ int main()
 		k2 = h*f((x0+0.5*h),(y0+0.5*k1));
 		k3 = h*f((x0+0.5*h),(y0+0.5*k2));
 		k4 = h*f((x0+h),(y0+k3));
-		k = (1/6)*(k1+2*k2+2*k3+k4);
+		k = (k1+2*k2+2*k3+k4)/6;
 		y0 = y0+k;
 		x0 = x0+h;
 		printf("Step = %d\nk1 = %f\nk2 = %f\nk3 = %f\nk4 = %f\n",i,k1,k2,k3,k4);0
